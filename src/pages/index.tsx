@@ -391,7 +391,7 @@ export default function Home() {
               </Carousel>
               <div className="py-2 text-center text-sm text-muted-foreground">
                 <span className="font-semibold">
-                   {4} / {4} {/*This can be changed when number of projects have been addded */}
+                   {Current} / {4} {/*This can be changed when number of projects have been addded */}
                 </span>{" "}
                 projects
               </div>
