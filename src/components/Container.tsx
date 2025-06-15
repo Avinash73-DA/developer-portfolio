@@ -41,7 +41,9 @@ const navLinks = [
   { href: "#about", text: "About" },
   { href: "#projects", text: "Projects" },
   { href: "#services", text: "Services" },
+  { href: "#contact", text: "Contact" },
 ];
+
 
 function handleClick(e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) {
   const href = e.currentTarget.getAttribute("href");
@@ -82,8 +84,8 @@ export default function Container(props: ContainerProps) {
   const { children, ...customMeta } = props;
   const router = useRouter();
   const meta = {
-    title: "Wendo",
-    description: `Full-stack website developer and TypeScript enthusiast.`,
+    title: "Portfolio",
+    description: `Data Engineer & Automation Enthusiast | Building scalable pipelines and smart workflows.`,
     image: "/assets/logo.webp",
     type: "website",
     ...customMeta,
@@ -163,7 +165,7 @@ export default function Container(props: ContainerProps) {
           </button>
         </div>
         <Link href="/">
-          <span className="text-lg font-semibold">wendo</span>
+          <span className="text-lg font-semibold">Avinash</span>
         </Link>
 
         {/* Desktop menu */}
@@ -174,7 +176,7 @@ export default function Container(props: ContainerProps) {
               href={link.href}
               text={link.text}
               i={i}
-              className="text-base"
+              className="text-base "
             />
           ))}
         </ul>
@@ -220,7 +222,7 @@ export default function Container(props: ContainerProps) {
                 {/* Footer */}
                 <div className="flex min-h-fit w-full flex-col space-y-8 px-[22px] py-10">
                   <span className="text-sm text-muted-foreground">
-                    © {new Date().getFullYear()} wendo. All rights reserved.
+                    © {new Date().getFullYear()} Avinash. All rights reserved.
                   </span>
                 </div>
               </div>

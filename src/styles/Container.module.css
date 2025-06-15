@@ -6,6 +6,7 @@
   @apply hidden items-center space-x-5 text-center sm:flex;
 }
 
+
 /* burger menu */
 .burger-button {
   @apply inline-flex transform items-center justify-center rounded-md p-2 transition-all duration-300 focus:outline-none;

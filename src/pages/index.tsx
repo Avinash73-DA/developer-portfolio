@@ -28,75 +28,72 @@ import VanillaTilt from "vanilla-tilt";
 import { motion } from "framer-motion";
 
 const aboutStats = [
-  { label: "Years of experience", value: "3+" },
-  { label: "Technologies mastered", value: "5+" },
-  { label: "Companies worked with", value: "15+" },
-];
+  { label: "Projects Automated", value: "5+" },
+  {  label: "Efficiency Gain", value: "90%" },
+  { label: "Tools & Platforms Used", value: "6" },
+  { label: "Data Pipelines Built", value: "7" },
+  { label: "SQL Queries" , value: "500+" }
+]
 
 const projects = [
   {
-    title: "Unqueue",
-    description: "E-commerce platform for selling digital products",
-    image: "/assets/unqueue.webm",
-    href: "https://unqueue.shop/",
+    title: "JIRA Workflow",
+    description: "Customer Onboarding Worklfow - JIRA + Databricks",
+    image: "/assets/jira_customer_implementation.webm",
+    href: "https://github.com/Avinash73-DA/customer-onboarding-jira-workflow/tree/main",
   },
   {
-    title: "InfiniteVPS",
-    description: "High performance VPS hosting solution",
-    image: "/assets/infinitevps.webm",
+    title: "n8n-automatin-nutrition",
+    description: "Nutrition Tracker Automation",
+    image: "/assets/n8n_automation_nutrition.webm",
     href: "#",
   },
+  // {
+  //   title: "ETL Pipeline",
+  //   description: "Extraction, Transformation & Load - Pipeline",
+  //   image: "/assets/translate_bot.webm",
+  //   href: "https://translatebot.app/",
+  // },
   {
-    title: "TranslateBot",
-    description: "Powerful Multilingual Translation Bot for Discord",
-    image: "/assets/translate_bot.webm",
-    href: "https://translatebot.app/",
+    title: "ETL Pipeline",
+    description: "Extraction, Transformation & Load - Pipeline",
+    image: "/assets/etl-pipeline.jpg",
+    href: "https://github.com/Avinash73-DA/etl-pipeline",
   },
   {
-    title: "Wrona",
-    description: "Robotics-focused technology company",
-    image: "/assets/wrona.jpeg",
-    href: "https://www.wrona.com/",
-  },
-  {
-    title: "This website",
-    description: "My personal website",
-    image: "/assets/portfolio.webm",
-    href: "https://github.com/wendoj/portfolio",
+    title: "HR Analytical Dashboard",
+    description: "HR Analytical Dashboard",
+    image: "/assets/dashboard.webm",
+    href: "https://public.tableau.com/app/profile/avinash.m6467/viz/shared/Q4FTK75Q3",
   },
 ];
 
 const services = [
   {
-    service: "Frontend Development",
-    description:
-      "Creating stellar user interfaces and web experiences using the latest technologies.",
-    icon: Code2,
-  },
-  {
-    service: "UX Design",
-    description:
-      "Building intuitive, user-centric designs that drive engagement and conversion.",
-    icon: Frame,
-  },
-  {
-    service: "SEO Optimization",
-    description:
-      "Enhancing your website's visibility in search engines for increased organic traffic.",
-    icon: SearchCheck,
-  },
-  {
-    service: "Responsive Design",
-    description:
-      "Designing websites that look and perform equally well on all devices and screen sizes.",
-    icon: MonitorSmartphone,
-  },
-  {
-    service: "Backend Development",
-    description:
-      "Developing robust, scalable server-side logic for a wide range of web applications.",
-    icon: Eye,
-  },
+  service: "Python Scripting",
+  description: "Automating tasks, building custom scripts, and writing APIs to streamline workflows using Python.",
+  icon: Code2,
+},
+{
+  service: "Data Analysis & ETL Pipeline",
+  description: "Building ETL pipelines, scheduling data workflows, writing efficient queries for data-driven insights.",
+  icon: Frame,
+},
+{
+  service: "Business Intelligence",
+  description: "Turning raw data into actionable insights through dashboards and analytics.",
+  icon: SearchCheck,
+},
+{
+  service: "Workflow Strategies & Automation",
+  description: "Optimizing business operations with smart, scalable workflow automations.",
+  icon: MonitorSmartphone,
+},
+{
+  service: "Automation",
+  description: "Implementing end-to-end automation solutions that boost productivity and accuracy.",
+  icon: Eye,
+},
 ];
 
 export default function Home() {
@@ -190,9 +187,10 @@ export default function Home() {
               data-scroll-speed=".09"
               className="flex flex-row items-center space-x-1.5"
             >
-              <span className={styles.pill}>next.js</span>
-              <span className={styles.pill}>tailwindcss</span>
-              <span className={styles.pill}>typescript</span>
+              <span className={styles.pill}>Data Analytics</span>
+              <span className={styles.pill}>Automation</span>
+              <span className={styles.pill}>Python API</span>
+              <span className={styles.pill}>Project Management</span>
             </div>
             <div>
               <h1
@@ -206,7 +204,7 @@ export default function Home() {
                   <br />
                 </span>
                 <span className="clash-grotesk text-gradient text-6xl 2xl:text-8xl">
-                  WendoJ.
+                  Avinash.
                 </span>
               </h1>
               <p
@@ -215,8 +213,7 @@ export default function Home() {
                 data-scroll-speed=".06"
                 className="mt-1 max-w-lg tracking-tight text-muted-foreground 2xl:text-xl"
               >
-                An experienced full-stack website developer with a passion for
-                crafting unique digital experiences.
+                A results-driven Automation & Data Engineering enthusiast, transforming workflows with smart scripts and integrations.
               </p>
             </div>
             <span
@@ -225,7 +222,7 @@ export default function Home() {
               data-scroll-speed=".06"
               className="flex flex-row items-center space-x-1.5 pt-6"
             >
-              <Link href="mailto:wendoj@proton.me" passHref>
+              <Link href="mailto:avinashsolai@gmail.com" passHref>
                 <Button>
                   Get in touch <ChevronRight className="ml-1 h-4 w-4" />
                 </Button>
@@ -268,22 +265,43 @@ export default function Home() {
             data-scroll-position="top"
             className="my-14 flex max-w-6xl flex-col justify-start space-y-10"
           >
-            <h2 className="py-16  pb-2 text-3xl font-light leading-normal tracking-tighter text-foreground xl:text-[40px]">
-              I&apos;m an experienced full-stack developer proficient in{" "}
+            <h2 className="py-16 pb-2 text-3xl font-light leading-normal tracking-tighter text-foreground xl:text-[40px]">
+              I&apos;m a results-driven Business Analyst and Automation Developer with hands-on experience in{" "}
               <Link
-                href="https://create.t3.gg/"
+                href="https://n8n.io/"
                 target="_blank"
                 className="underline"
               >
-                TypeScript, Tailwind, and Next.js
+                <strong>Automation</strong>
+              </Link>,{" "}
+              <Link
+                href="https://www.w3schools.com/sql/"
+                target="_blank"
+                className="underline"
+              >
+                <strong>Database (SQL)</strong>
+              </Link>,{" "}
+              <Link
+                href="https://realpython.com/tutorials/scripting/"
+                target="_blank"
+                className="underline"
+              >
+                <strong>Python Scripting</strong>
+              </Link>, and{" "}
+              <Link
+                href="https://www.databricks.com/learn"
+                target="_blank"
+                className="underline"
+              >
+                <strong>Databricks</strong>
               </Link>{" "}
-              since 2021. My experience spans from startups to mid-sized
-              companies, where I&apos;ve been instrumental in the entire product
-              design process; from ideation and wireframing, through
-              prototyping, to the delivery of the final product, all while
-              efficiently collaborating with cross-functional teams.
+              for process optimization and data-driven decision-making. I specialize in data analysis,
+              process automation, and business intelligence. Adept at integrating APIs and building insightful reports across CRM platforms.<br /><br />
+              Experienced in driving automation solutions and utilizing JIRA for efficient project workflow management and tracking.
+              Demonstrated expertise in revenue analysis, KPI tracking, cohort analysis, and implementing custom workflows to enhance team collaboration and productivity.
             </h2>
-            <div className="grid grid-cols-2 gap-8 xl:grid-cols-3">
+
+            <div className="grid grid-cols-2 gap-8 xl:grid-cols-4"> {/* Here we can alter the no of columns that has to appear in the about section  */}
               {aboutStats.map((stat) => (
                 <div
                   key={stat.label}
@@ -319,15 +337,15 @@ export default function Home() {
             </div>
           </div>
           <div data-scroll data-scroll-speed=".4" className="my-64">
-            <span className="text-gradient clash-grotesk text-sm font-semibold tracking-tighter">
+            <span className="text-gradient clash-grotesk text-xl font-semibold tracking-tight">
               ✨ Projects
             </span>
             <h2 className="mt-3 text-4xl font-semibold tracking-tight tracking-tighter xl:text-6xl">
               Streamlined digital experiences.
             </h2>
             <p className="mt-1.5 text-base tracking-tight text-muted-foreground xl:text-lg">
-              I&apos;ve worked on a variety of projects, from small websites to
-              large-scale web applications. Here are some of my favorites:
+              I&apos;ve worked on streamlining internal operations to building data-driven tools, 
+              my work spans personal initiatives and impactful contributions within the organization.:
             </p>
 
             {/* Carousel */}
@@ -373,7 +391,7 @@ export default function Home() {
               </Carousel>
               <div className="py-2 text-center text-sm text-muted-foreground">
                 <span className="font-semibold">
-                  {current} / {count}
+                   {4} / {4} {/*This can be changed when number of projects have been addded */}
                 </span>{" "}
                 projects
               </div>
@@ -439,16 +457,21 @@ export default function Home() {
             className="flex flex-col items-center justify-center rounded-lg bg-gradient-to-br from-primary/[6.5%] to-white/5 px-8 py-16 text-center xl:py-24"
           >
             <h2 className="text-4xl font-medium tracking-tighter xl:text-6xl">
-              Let&apos;s work{" "}
-              <span className="text-gradient clash-grotesk">together.</span>
+              Let&apos;s work <span className="text-gradient clash-grotesk">together.</span>
             </h2>
             <p className="mt-1.5 text-base tracking-tight text-muted-foreground xl:text-lg">
-              I&apos;m currently available for freelance work and open to
-              discussing new projects.
+              I&apos;m currently available for freelance work and open to discussing new projects.
             </p>
-            <Link href="mailto:wendoj@proton.me" passHref>
-              <Button className="mt-6">Get in touch</Button>
-            </Link>
+
+            {/* Wrap buttons in a flex row container */}
+            <div className="mt-6 flex flex-row gap-4">
+              <Link href="mailto:avinashsolai@gmail.com" passHref>
+                <Button>Get in touch</Button>
+              </Link>
+              <Link href="https://www.linkedin.com/in/avinash-m-va73" passHref target="_blank">
+                <Button variant="outline">Connect on LinkedIn</Button>
+              </Link>
+            </div>
           </div>
         </section>
       </div>
